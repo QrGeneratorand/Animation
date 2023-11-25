@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    font-family:'Jost' , sans-serif;
+    background:linear-gradient(to bottom, #3bf3e4 , rgb(45, 148, 167) , rgb(56, 128, 124))
+}
+.nav{
+    width: 30px;
+    height: 20%;
+    top: -220px;
+    position: relative;
+    display: flex;
+    right: -63px;
+}
+.main{
+    width: 350px;
+    height: 500px ;
+    background-color:red;
+    overflow: hidden;
+    background:url(My/background.png) no-repeat center / cover ;
+    border-radius:10px;
+    box-shadow:5px 20px 50px #000;
+}
+#chk{
+    display: none;
+}
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer ;
+    transition: 5s erase-in-out;
+}
+input{
+    width: 60px;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #e9d9d9;
+    background:#023138 ;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 2s ease-in;
+    cursor: pointer;
+}
+button :hover{
+    background: #000000;
+}
+.login{
+    height: 460px;
+    background: #eeeeee;
+    border-radius: 60% /10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+.login lable{
+    color: #11d4f1;
+    transform: scale(.6);
+}
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+#chk:checked ~ .login{
+    transform: translateY(1);
+}
+#chk:checked ~ .signup{
+    transform: translateY(.6);
+}
